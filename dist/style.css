@@ -853,26 +853,11 @@
     width: calc(var(--spacing) * 60);
     height: calc(var(--spacing) * 60);
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
   }
   .h-52 {
     height: calc(var(--spacing) * 52);
@@ -895,17 +880,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-0 {
-    width: calc(var(--spacing) * 0);
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-3xl {
     width: var(--container-3xl);
@@ -921,9 +897,6 @@
   }
   .w-2xl {
     width: var(--container-2xl);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
@@ -1353,9 +1326,6 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
-  }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -1852,35 +1822,11 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .pt-1 {
-    padding-top: calc(var(--spacing) * 1);
-  }
-  .pt-5 {
-    padding-top: calc(var(--spacing) * 5);
-  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
-  }
-  .pr-2 {
-    padding-right: calc(var(--spacing) * 2);
-  }
-  .pr-4 {
-    padding-right: calc(var(--spacing) * 4);
-  }
-  .pr-10 {
-    padding-right: calc(var(--spacing) * 10);
-  }
-  .pr-20 {
-    padding-right: calc(var(--spacing) * 20);
-  }
-  .pr-36 {
-    padding-right: calc(var(--spacing) * 36);
-  }
-  .pr-40 {
-    padding-right: calc(var(--spacing) * 40);
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
@@ -1932,10 +1878,6 @@
   }
   .font-\[Montserrat\] {
     font-family: Montserrat;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -2553,6 +2495,11 @@
       height: calc(var(--spacing) * 32);
     }
   }
+  .\32 xl\:w-3xl {
+    @media (width >= 96rem) {
+      width: var(--container-3xl);
+    }
+  }
   .\32 xl\:w-28 {
     @media (width >= 96rem) {
       width: calc(var(--spacing) * 28);
@@ -2561,11 +2508,6 @@
   .\32 xl\:w-2xl {
     @media (width >= 96rem) {
       width: var(--container-2xl);
-    }
-  }
-  .\32 xl\:w-3xl {
-    @media (width >= 96rem) {
-      width: var(--container-3xl);
     }
   }
   .\32 xl\:w-62 {
